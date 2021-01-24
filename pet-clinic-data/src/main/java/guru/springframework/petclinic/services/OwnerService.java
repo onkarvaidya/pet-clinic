@@ -6,7 +6,9 @@ import java.util.Set;
 
 public interface OwnerService {
 
-    Owner saveOwner(Owner owner);
+    Set<Owner> findByLastName(String lastName);
+
+    Owner save(Owner owner);
 
     Owner findById(Long id);
 
